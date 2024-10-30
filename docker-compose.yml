@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  localaigents:
+    image: crewai2:latest
+    container_name: aigen_crewai
+    working_dir: /app
+    #command: python3 app.py
+    command: tail -f /dev/null #keep it running
